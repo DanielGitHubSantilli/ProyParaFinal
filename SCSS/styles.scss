@@ -1,0 +1,268 @@
+// var Iamgenes;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+$colorCaidim: rgb(247, 42, 6);
+$colorFuente:rgb(235, 229, 229);
+a{
+    &:hover { 
+    font-weight: bold;
+    color: $colorCaidim;
+    }
+    &:active {
+    background-color: rgb(54, 12, 240);
+    color: rgb(170, 49, 28);
+    } 
+}
+h1{
+    color:$colorCaidim;
+}
+.logo-redes {
+    width: 40px;
+}
+body { 
+    background-color: rgb(150, 36, 36);
+    @media(max-width:300px) and (min-width:700px)
+    {background-color: rgb(201, 83, 83); 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+}
+.fondoBlanco{
+    background-color: white;
+}
+header { 
+    @media(min-width: 692px)
+    {color: greenyellow;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+    __logo {
+    width: 80px;
+    }
+    __menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+        a { 
+            :hover{
+            font-weight: bold;
+            color: $colorCaidim;
+            }
+            :active {
+                background-color: rgb(54, 12, 240);
+                color: $colorCaidim;
+                }  
+            }
+        }   
+    }
+
+.fotos_Prod{
+    width:80px;
+}
+
+hr{
+    background-color: #ffffff;
+    border-bottom: 0dvh;
+}
+.padre-flex{
+    display:grid;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+.padre-grid {
+    display: grid;
+    /* grid-template-columns:1fr,1fr ; */
+    gap:20px;
+    width: 70%;
+    justify-content:first baseline;
+    }
+
+.colorFooter{
+    background-color: yellowgreen;
+}
+.Principal{
+    width:90%;
+    max-width: 120px;
+    margin: auto;
+    padding:40px 0;
+    display:flex;
+    gap:20px;
+}
+h1{
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    }
+h2{
+    color: green;
+    }
+    p{
+    color:black;
+    font-size: 15px;
+}
+nav{
+    ul {
+    display: flex;
+        li {
+            flex: auto ;
+        }
+        }
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+    li a{
+        list-style: none;
+        text-decoration: none;
+        color:whitesmoke;
+    }
+}
+main {
+    max-width: 800px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1rem;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+.publicidadCaidim{
+    border-radius: 10px;
+	text-align:center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+    .boton {
+        background:$colorCaidim;
+        border:aqua;
+        border-radius: 50px;
+        cursor: pointer;
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        }
+        ul {    
+            list-style: none;
+                li{
+                    margin: 15px;
+                    font-weight: bold;   
+
+                    }
+            }
+}
+
+article,nav,header,footer{
+    padding: 1rem;
+    margin:1px;
+}
+footer{
+    background-color: yellowgreen;
+}
+nav{
+    max-width: 900px;
+    margin:auto;
+    margin-top: 50px;
+}
+.parrafo18{
+    font-size:18px;
+    padding: 2rem;
+}
+.parrafo20{
+    font-size: 20px;
+    border-bottom: 5px;
+}
+.parraforojo{
+    color:$colorCaidim;
+}
+.parrafoAzul{
+    color:rgb(25, 0, 255);
+}
+.textoBlanco{
+    font-style:italic;
+    color:$colorFuente;
+}
+header nav{
+    width: 100%;
+}
+/* .git{
+    color:chartreuse;
+} */
+.ColorCliente{
+    background-color: green;
+}
+.colorDireccion{
+    background-color: rgb(124, 75, 52);
+    font-style:oblique;
+}
+
+
+.colorFuentePie{
+    color:$colorFuente;
+}
+/* utilizando grid */
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 4fr 2fr 4fr;
+    border:solid 7px yellowgreen;
+
+    // // // "il fl fl je je"
+    // // // "il fl fl je je"
+    // // // "pm fl fl mp mp"
+    // // // "pm pm pm rc rc";
+    gap: 5px;
+    margin: 30px 0;
+}
+.grid-item{
+border:solid 2px $colorCaidim;
+}
+.lustramuebles, .Jabón, .perfuminas, .Rollos, .Mostrador, .frenteNegocio {
+    max-width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.lustramuebles {
+    background-image: url(../img/productos/insecticidas-lustramuebles.jpg);
+    grid-area: il;
+    // insecticidalustramueble
+}
+.Jabón {
+    background-image: url(../img/productos/Jabón-esponja-escobillon.jpg);
+    grid-area: je;
+    /* align-self: stretch; */
+    // JabonEsponja
+    height: 100%;
+}
+.perfuminas {
+    background-image: url(../img/productos/Mostador-perfuminas.jpg);
+    grid-area: mp;
+    // MostradorPerfuminas
+}
+.Rollos {
+    background-image: url(../img/productos/Rollos\ cocina.jpg);
+    grid-area: rc;
+    // RolloCocina
+}
+.Mostrador {
+    background-image: url(../img/productos/Mostrador.jpg);
+    grid-area: pc;
+}
+.frenteNegocio {
+    background-image: url(../img/productos/Frente\ Local.jpg);
+    grid-area: fl;
+}
+
